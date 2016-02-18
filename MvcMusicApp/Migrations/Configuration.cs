@@ -72,6 +72,7 @@ using MvcMusicApp.Models;
             }
 
             // Dummy comment
+            // something else
         }
     }
 }
