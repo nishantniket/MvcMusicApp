@@ -14,6 +14,7 @@ namespace MvcMusicApp.Models
         public int Albumid {get;set;}
         public string name { get; set;}
         public virtual ICollection<Song> songs { get; set; }
+        public virtual ApplicationUser User { get; set; }
 
     }
 }

@@ -26,7 +26,7 @@ namespace MvcMusicApp.Models
         public string LastName { get; set; }
     }
 
-    public class ToDo
+   public class ToDo
     {
         public int Id { get; set; }
         public string Description { get; set; }

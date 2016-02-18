@@ -159,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlbumController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ToDoController.cs" />
     <Compile Include="Global.asax.cs">
@@ -167,6 +168,10 @@
     <Compile Include="Migrations\201602170807197_InitialCreate.cs" />
     <Compile Include="Migrations\201602170807197_InitialCreate.Designer.cs">
       <DependentUpon>201602170807197_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602180722066_asd.cs" />
+    <Compile Include="Migrations\201602180722066_asd.Designer.cs">
+      <DependentUpon>201602180722066_asd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -229,6 +234,11 @@
     <Content Include="Views\ToDo\Edit.cshtml" />
     <Content Include="Views\ToDo\Index.cshtml" />
     <Content Include="Views\ToDo\All.cshtml" />
+    <Content Include="Views\Album\Create.cshtml" />
+    <Content Include="Views\Album\Delete.cshtml" />
+    <Content Include="Views\Album\Details.cshtml" />
+    <Content Include="Views\Album\Edit.cshtml" />
+    <Content Include="Views\Album\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -243,6 +253,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201602170807197_InitialCreate.resx">
       <DependentUpon>201602170807197_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602180722066_asd.resx">
+      <DependentUpon>201602180722066_asd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

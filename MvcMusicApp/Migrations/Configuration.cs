@@ -68,11 +68,12 @@ using MvcMusicApp.Models;
             //Add User Admin to Role Admin
             if (adminresult.Succeeded)
             {
-                var result = UserManager.AddToRole(user.Id, name);
+                var result = UserManager.AddToRole(user.Id, name); // successfully added an admin
             }
 
             // Dummy comment
-            // something else
+            
+            // trial to see the diff (compare previous and current)
         }
     }
 }
