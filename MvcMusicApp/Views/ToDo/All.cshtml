@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MvcMusicApp.Models.ToDo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>All</h2>
+
+<h2>List of ToDoes for all Users</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsDone)
+        </th>
+        <th>@Html.DisplayNameFor(model => model.User.UserName)</th>
+        <th>@Html.DisplayNameFor(model => model.User.HomeTown)</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.HomeTown)
+            </td>
+        </tr>
+    }
+</table>
