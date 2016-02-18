@@ -70,6 +70,8 @@ using MvcMusicApp.Models;
             {
                 var result = UserManager.AddToRole(user.Id, name);
             }
+
+            // Dummy comment
         }
     }
 }
